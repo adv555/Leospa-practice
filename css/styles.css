@@ -1,3 +1,45 @@
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .container {
-    width
+  width: 1200px;
+}
+header {
+  padding-top: 3px;
+}
+
+header .container {
+  display: flex;
+  padding-right: 5px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: flex-end;
+}
+.hero {
+  background-color: lightcoral;
+  padding-bottom: 185px;
+  padding-top: 165px;
+}
+
+/* .hero .container {
+} */
+.video-link {
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: lightsalmon;
+  border: 1px solid darkblue;
 }
