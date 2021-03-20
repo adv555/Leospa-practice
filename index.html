@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty centre</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400;500&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -13,14 +24,30 @@
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <a href="#"><img src="" alt="logo" /></a>
+            <!-- <a class="logo-link link" href="./index.html"
+              ><img src="./images/logo.png" alt="logo"/>
+            </a> -->
+            <a class="logo-img" href="./index.html">
+              <img src="./images/logo 2.png" alt="Logo" width="49px"
+            /></a>
+            <a class="logo-link link" href="/index.html">Leospa</a>
           </div>
           <ul class="nav-list list">
-            <li class="nav-link link"><a href="#hero">home</a></li>
-            <li class="nav-link link"><a href="#about">about</a></li>
-            <li class="nav-link link"><a href="#features">feature</a></li>
-            <li class="nav-link link"><a href="#sefvices">service</a></li>
-            <li class="nav-link link"><a href="#contact">contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#hero">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#features">feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#sefvices">service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#contact">contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -47,9 +74,9 @@
       </section>
       <!-- About -->
       <section id="about">
-        <div>
-          <img src="" alt="china-rose" />
-          <img src="" alt="jasmine" />
+        <div class="container">
+          <img src="./images/about/china-rose.png" alt="china-rose" />
+          <img src="./images/about/jasmine.png" alt="jasmine" />
           <p>About our spa center</p>
           <h2>Come and you will be Inspired!</h2>
           <p>
@@ -64,26 +91,26 @@
       </section>
       <!-- Services -->
       <section>
-        <div>
+        <div class="container">
           <ul>
             <li>
-              <a href=""><img src="" alt="image-1" /></a>
+              <a href="./images/services/1.jpg"><img src="" alt="image-1" /></a>
             </li>
             <li>
-              <a href=""><img src="" alt="image-2" /></a>
+              <a href=""><img src="./images/services/2.jpg" alt="image-2" /></a>
             </li>
             <li>
-              <a href=""><img src="" alt="image-3" /></a>
+              <a href=""><img src="./images/services/3.jpg" alt="image-3" /></a>
             </li>
             <li>
-              <a href=""><img src="" alt="image-4" /></a>
+              <a href="./images/services/4.jpg"><img src="" alt="image-4" /></a>
             </li>
           </ul>
         </div>
       </section>
       <!-- Popular services -->
       <section id="features">
-        <div>
+        <div class="container">
           <h2>Popular Procedures</h2>
           <p>
             To doesn't his appear replenish together called he of mad place
@@ -92,38 +119,47 @@
           </p>
           <ul>
             <li>
-              <img src="" alt="therapy" />
+              <img
+                src="./images/popular-procedures-blog/img-1.jpg"
+                alt="therapy"
+              />
               <h3>Massage Therapy</h3>
               <p>
                 Living winged said you darkness you're divide gathered and bring
                 one seasons face great dr Waters firmament place which.
               </p>
-              <a href="">read more</a>
+              <a href="#">read more</a>
             </li>
             <li>
-              <img src="" alt="care" />
+              <img
+                src="./images/popular-procedures-blog/img-2.jpg"
+                alt="care"
+              />
               <h3>Beauty Care</h3>
               <p>
                 Living winged said you darkness you're divide gathered and bring
                 one seasons face great dr Waters firmament place which.
               </p>
-              <a href="">read more</a>
+              <a href="#">read more</a>
             </li>
             <li>
-              <img src="" alt="reflexology" />
+              <img
+                src="./images/popular-procedures-blog/img-3.jpg"
+                alt="reflexology"
+              />
               <h3>Executive Reflexology</h3>
               <p>
                 Living winged said you darkness you're divide gathered and bring
                 one seasons face great dr Waters firmament place which.
               </p>
-              <a href="">read more</a>
+              <a href="#">read more</a>
             </li>
           </ul>
         </div>
       </section>
       <!-- Testimonial section -->
       <section>
-        <div>
+        <div class="container">
           <!-- h2 -->
           <ul>
             <li>
@@ -133,7 +169,7 @@
                 pariatur rem fugiat magni exercitationem deleniti, repellat
                 beatae dolorem voluptas. Ea suscipit sunt magni quisquam!
               </p>
-              <img src="" alt="girl-1" />
+              <img src="./images/testimonial/client-1.jpg" alt="girl-1" />
               <p>Jack Marsh,<span>Executive</span></p>
             </li>
             <li>
@@ -143,7 +179,7 @@
                 pariatur rem fugiat magni exercitationem deleniti, repellat
                 beatae dolorem voluptas. Ea suscipit sunt magni quisquam!
               </p>
-              <img src="" alt="girl-2" />
+              <img src="./images/testimonial/client-1.jpg" alt="girl-2" />
               <p>Jack Marsh,<span>Executive</span></p>
             </li>
           </ul>
@@ -151,7 +187,7 @@
       </section>
       <!-- Team -->
       <section>
-        <div>
+        <div class="container">
           <h2>Experienced Team</h2>
           <p>
             To doesn't his appear replenish together called he of mad place
@@ -160,7 +196,7 @@
           </p>
           <ul>
             <li>
-              <img src="#" alt="Joseph" />
+              <img src="./images/team/joseph-austin.jpg" alt="Joseph" />
               <h3>Joseph Austin</h3>
               <p>Thai Message</p>
               <ul>
@@ -179,7 +215,7 @@
               </ul>
             </li>
             <li>
-              <img src="#" alt="David" />
+              <img src="./images/team/david-hannan.jpg" alt="David" />
               <h3>David Hannan</h3>
               <p>Thai Message</p>
               <ul>
@@ -198,7 +234,7 @@
               </ul>
             </li>
             <li>
-              <img src="#" alt="Cheryl" />
+              <img src="./images/team/cheryl-harris.jpg" alt="Cheryl" />
               <h3>Cheryl Harris</h3>
               <p>Thai Message</p>
               <ul>
@@ -220,33 +256,34 @@
         </div>
       </section>
       <!-- Appointment -->
-      <section id="services">
-        <div>
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="mail" placeholder="email" />
+      <section class="form" id="services">
+        <div class="container">
+          <form class="form-register" action="">
+            <input class="form-text" type="text" placeholder="Name" />
+            <input class="form-text" type="mail" placeholder="email" />
             <select name="" id="">
               <option value="">1</option>
               <option value="">2</option>
               <option value="">3</option>
             </select>
-            <input type="tel" placeholder="Phone number" />
-            <input type="date" placeholder="dd.mm.yyyy" />
-            <input type="time" placeholder="--:--" />
+            <input class="form-text" type="tel" placeholder="Phone number" />
+            <input class="form-text" type="date" placeholder="dd.mm.yyyy" />
+            <input class="form-text" type="time" placeholder="--:--" />
             <textarea
+              class="form-notes"
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="Your notes"
             ></textarea>
-            <button type="submit">MAKE AN APPOINTMENT</button>
+            <button class="form-btn" type="submit">MAKE AN APPOINTMENT</button>
           </form>
         </div>
       </section>
       <!-- Blog -->
       <section>
-        <div>
+        <div class="container">
           <h2>Latest From Blog</h2>
           <p>
             To doesn't his appear replenish together called he of mad place
@@ -255,7 +292,10 @@
           </p>
           <ul>
             <li>
-              <img src="#" alt="post-1" />
+              <img
+                src="./images/popular-procedures-blog/img-1.jpg"
+                alt="post-1"
+              />
               <h3>Massage Therapy</h3>
               <p>
                 Living winged said you darkness you're divide gathered and bring
@@ -264,7 +304,10 @@
               <a href="#">read more</a>
             </li>
             <li>
-              <img src="" alt="post-2" />
+              <img
+                src="./images/popular-procedures-blog/img-2.jpg"
+                alt="post-2"
+              />
               <h3>Beauty Care</h3>
               <p>
                 Living winged said you darkness you're divide gathered and bring
@@ -273,7 +316,10 @@
               <a href="#">read more</a>
             </li>
             <li>
-              <img src="#" alt="post-3" />
+              <img
+                src="./images/popular-procedures-blog/img-3.jpg"
+                alt="post-3"
+              />
               <h3>Executive Reflexology</h3>
               <p>
                 Living winged said you darkness you're divide gathered and bring
@@ -286,7 +332,7 @@
       </section>
       <!-- Contact -->
       <section id="contact">
-        <div>
+        <div class="container">
           <h2>Get In Touch</h2>
           <p>
             To doesn't his appear replenish together called he of mad place
@@ -294,9 +340,14 @@
             and martcin
           </p>
           <div>
-            <address>
+            <address class="address">
               <p>848 E 28th ST, BROOKLYN NEW YORK, USa</p>
-              <!-- <a href="https://goo.gl/maps/XMyqfj2qEpwAtg686" target="blank" rel="noopener noreferrer">848 E 28th ST, BROOKLYN NEW YORK, USa</a> -->
+              <a
+                href="https://goo.gl/maps/XMyqfj2qEpwAtg686"
+                target="_blank"
+                rel="noopener noreferrer"
+                >848 E 28th ST, BROOKLYN NEW YORK, USa</a
+              >
               <ul>
                 <li>
                   <a href="mailto:example@leospa.com">example@leospa.com</a>
@@ -322,10 +373,8 @@
                 rows="10"
                 placeholder="Write Comment"
               >
-                        <button type="submit">Submit now</button>
-
-                        </textarea
-              >
+                <button type="submit">Submit now</button>
+              </textarea>
             </form>
           </div>
         </div>
