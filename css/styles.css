@@ -10,7 +10,7 @@
   --primary-text-color: #263a41;
   --accent-color: #ff817e;
   --text-color: #555555;
-  
+
   --item-color: #888888;
   --white-color: #ffffff;
 }
@@ -127,9 +127,10 @@ header .container {
 .contact-list .contact-item + .contact-item {
   margin-left: 50px;
 }
-/* .nav-item:not(:last-child) {
-  margin-right: 50px; */
-}
+/* 
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+} */
 
 /* ======= END HEADER ======= */
 
@@ -188,16 +189,17 @@ header .container {
   justify-content: space-between;
   align-items: center;
   width: 652px;
-  
 }
 
-.form-text, .form-notes {
-border: none;
-border-bottom: 1px solid #e3e6ea;
-background: transparent;
-padding-bottom: 16px;
+.form-text,
+.form-notes {
+  border: none;
+  border-bottom: 1px solid #e3e6ea;
+  background: transparent;
+  padding-bottom: 16px;
 }
-.form-text placeholder, .form-notes placeholder {
+.form-text placeholder,
+.form-notes placeholder {
   text-transform: uppercase;
   color: #e3e6ea;
 }
@@ -210,7 +212,7 @@ padding-bottom: 16px;
   color: #999999;
   font-weight: 400;
   font-family: var(--main-font);
-  
+
   /* border: none; */
   /* border-bottom: 1px solid  #e3e6ea; */
   /* background: transparent; */
@@ -238,7 +240,6 @@ padding-bottom: 16px;
   /* min-width: 200px; */
   margin-top: 40px;
   padding: 18px 22px;
-
 }
 /* ======= END APPOINTMENT ======= */
 
