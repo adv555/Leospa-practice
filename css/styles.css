@@ -146,9 +146,12 @@ header .container {
 /* ======= END HEADER ======= */
 
 /* ======= HERO ======= */
-.hero {
+/* .hero {
   margin-left: 389px;
   width: 539px;
+} */
+.hero-wrapper {
+  width: 527px;
 }
 .suptitle {
   font-size: 15px;
@@ -320,13 +323,13 @@ header .container {
 .procedures-list,
 .blog-list {
   display: flex;
-  margin-top: -28px;
-  margin-left: -28px;
+  /* margin-top: -28px;
+  margin-left: -28px; */
 }
 .procedure-item {
-  flex-basis: calc(100% / 3 - 28px);
+  /* flex-basis: calc(100% / 3 - 28px);
   margin-top: 28px;
-  margin-left: 28px;
+  margin-left: 28px; */
   width: 360px;
   border: 1px solid #e3e6ea;
   text-align: center;
