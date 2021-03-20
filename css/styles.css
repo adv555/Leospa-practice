@@ -1,3 +1,46 @@
+/* Roboto 500 400 300 */
+/* Rufina 700 400 */
+/* Playfair Display 400 */
+/* background-color: #fff0ea; - hero absolute*/
+/* background-color: #ff817e; -- button*/
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Rufina', serif;
+  --logo-font: 'Playfair Display', serif;
+  --primary-text-color: #263a41;
+  --accent-color: #ff817e;
+  --text-color: #555555;
+  
+  --item-color: #888888;
+  --white-color: #ffffff;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -6,25 +49,91 @@
   text-decoration: none;
 }
 
-.container {
-  width: 1200px;
+.address {
+  font-style: normal;
 }
-header {
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* ======= COMPONENTS ======= */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* background-color: turquoise; */
+  border: 2px solid tomato;
+}
+
+/* ======= END COMPONENTS ======= */
+
+/* ======= HEADER ======= */
+
+/* header {
   padding-top: 3px;
 }
 
 header .container {
   display: flex;
   padding-right: 5px;
-}
+} */
 .logo {
-  display: flex;
-  align-items: center;
+  margin-right: 203px;
 }
-.nav-list {
+
+.logo-link {
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 2.4;
+  color: var(--title-color);
+  font-weight: 400;
+  font-family: var(--logo-font);
+  padding-bottom: 0;
+}
+.logo-img {
+  margin-bottom: 8px;
+}
+.nav {
   display: flex;
   align-items: flex-end;
+  justify-items: flex-start;
+  width: 456px;
 }
+
+.nav-list {
+  display: flex;
+  font-size: 14px;
+  line-height: 3.2;
+  color: #263a41;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.nav-link {
+  color: var(--primary-text-color);
+  transition: color 250ms var(--cubik), fill 250ms var(--cubik);
+}
+
+.nav-list .nav-item + .nav-item,
+.contact-list .contact-item + .contact-item {
+  margin-left: 50px;
+}
+/* .nav-item:not(:last-child) {
+  margin-right: 50px; */
+}
+
+/* ======= END HEADER ======= */
+
+/* ======= HERO ======= */
 .hero {
   background-color: lightcoral;
   padding-bottom: 185px;
@@ -43,3 +152,101 @@ header .container {
   background-color: lightsalmon;
   border: 1px solid darkblue;
 }
+/* ======= END HERO ======= */
+
+/* ======= ABOUT ======= */
+/* ======= END ABOUT ======= */
+
+/* ======= SERVICES ======= */
+/* ======= END SERVICES  ======= */
+
+/* ======= POPULAR SERVICES ======= */
+/* ======= END POPULAR SERVICES  ======= */
+
+/* ======= TESTIMONIALS ======= */
+/* ======= END TESTIMONIALS  ======= */
+
+/* ======= OUR TEAM ======= */
+/* ======= END OUR TEAM  ======= */
+
+/* ======= APPOINTMENT ======= */
+.form {
+  background-color: #fff9f8;
+  background-image: url(../images/appointment/bg.jpg);
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 130px;
+  /* width: 652px; */
+}
+.form .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-register {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 652px;
+  
+}
+
+.form-text, .form-notes {
+border: none;
+border-bottom: 1px solid #e3e6ea;
+background: transparent;
+padding-bottom: 16px;
+}
+.form-text placeholder, .form-notes placeholder {
+  text-transform: uppercase;
+  color: #e3e6ea;
+}
+
+.form-text {
+  width: 318px;
+
+  font-size: 12px;
+  line-height: 4.58;
+  color: #999999;
+  font-weight: 400;
+  font-family: var(--main-font);
+  
+  /* border: none; */
+  /* border-bottom: 1px solid  #e3e6ea; */
+  /* background: transparent; */
+}
+
+.form-notes {
+  width: 100%;
+  font-size: 12px;
+  line-height: 4.58;
+  color: var(--item-color);
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+.form-btn {
+  font-size: 14px;
+  /* line-height: 3.9; */
+
+  color: var(--white-color);
+  font-weight: 500;
+  font-family: var(--main-font);
+  text-align: center;
+  background: var(--accent-color);
+  border-radius: 35px;
+  border: none;
+  /* min-width: 200px; */
+  margin-top: 40px;
+  padding: 18px 22px;
+
+}
+/* ======= END APPOINTMENT ======= */
+
+/* ======= BLOG ======= */
+/* ======= END BLOG ======= */
+
+/* ======= CONTACTS======= */
+/* ======= END CONTACTS ======= */
+
+/* ======= FOOTER ======= */
+/* ======= END FOOTER ======= */
