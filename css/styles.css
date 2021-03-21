@@ -516,7 +516,7 @@ header .container {
   text-align: center;
 }
 .social-list {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -527,15 +527,23 @@ header .container {
 } */
 
 .social-link {
-  display: inline-block;
-  width: 30px;
-  border-radius: 15px;
-  background-color: rgba(96, 188, 15, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
   border: 1px solid #30383b;
   text-align: center;
 }
 .social-item:not(:last-child) {
   margin-right: 14px;
+}
+
+.social-icon {
+  fill: var(--bg-color-btn);
 }
 /* ======= END OUR TEAM  ======= */
 
