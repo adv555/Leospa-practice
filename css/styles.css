@@ -342,6 +342,14 @@ header .container {
   transform: translateY(0);
   transition: 500ms ease-in-out;
 }
+.overlay-text {
+  font-size: 22px;
+  line-height: 1.22;
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-weight: 700px;
+  margin-top: 25px;
+}
 
 /* .service-list .service-item + .service-item {
   margin-right: 4px;
