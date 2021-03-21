@@ -430,11 +430,15 @@ header .container {
 /* ======= TESTIMONIALS ======= */
 .testimonials {
   padding-bottom: 207px;
+  padding-top: 135px;
   background-color: #fff9f8;
 }
 .quote {
+  display: block;
   margin: 0 auto 50px;
+  fill: var(--accent-color);
 }
+
 .jack {
   border-radius: 50%;
   margin: 0 auto 15px;
