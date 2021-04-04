@@ -459,43 +459,53 @@
             won't wherein blessed second every wherein were meat kind wherein
             and martcin
           </p>
-          <div class="contact-thumb">
+          <div class="contact__data">
             <address class="address">
-              
-              <a class="address-link link"
-                href="https://goo.gl/maps/XMyqfj2qEpwAtg686"
-                target="_blank"
-                rel="noopener noreferrer"
-                >848 E 28th ST, BROOKLYN NEW YORK, USa</a
-              >
               <ul class="contact-list list">
                 <li class="contact-item">
+                  <svg class="address_icon" width="20px" height="20px">
+                    <use class="icon-map" href="./images/sprite.svg#icon-map">
+                    </use>
+                  </svg>
+                  <a class="address-link link"
+                    href="https://goo.gl/maps/XMyqfj2qEpwAtg686"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    848 E 28th ST, BROOKLYN NEW YORK, USa
+                  </a>
+                </li>
+
+                <li class="contact-item">
+                  <svg class="address_icon" width="20px" height="20px">
+                    <use class="icon-map" href="./images/sprite.svg#icon-envelope">
+                    </use>
+                  </svg>
+                  <a class="mail-link link" href="mailto:example@leospa.com">example@leospa.com</a>
                   <a class="mail-link link" href="mailto:example@leospa.com">example@leospa.com</a>
                 </li>
+
                 <li class="contact-item">
-                  <a class="mail-link link" href="mailto:example@leospa.com">example@leospa.com</a>
-                </li>
-              </ul>
-              <ul class="contact-list list">
-                <li class="contact-item">
+                    <svg class="address_icon" width="20px" height="20px">
+                      <use class="icon-map" href="./images/sprite.svg#icon-smartphone">
+                      </use>
+                    </svg>
                   <a class="tel-link link" href="tel:+0236523653265">tel:+02 365 2365 3265 (02)</a>
+                  <a class="tel-link link" href="tel:+0136523653265">+01 365 2365 3265 (04)</a>
                 </li>
-                <li class="contact-item">
-                  <a class="tel-link link" href="tel:+0136523653265">+01 365 2365 3265 (04)</a></li>
               </ul>
             </address>
-            <form action="">
-              <input type="text" placeholder="Name" />
-              <input type="mail" placeholder="Email Address" />
-              <textarea
+            <form action="" class="form-contact">
+              <input class="form-contact__input" type="text" placeholder="Name" />
+              <input class="form-contact__input" type="mail" placeholder="Email Address" />
+              <textarea class="form-contact__textarea"
                 name=""
                 id=""
                 cols="30"
                 rows="10"
                 placeholder="Write Comment"
               >
-                <button type="submit">Submit now</button>
-              </textarea>
+            </textarea>
+            <button type="submit" class="form-contact__btn">Submit now</button>
             </form>
           </div>
         </div>
