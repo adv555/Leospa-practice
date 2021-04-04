@@ -1,0 +1,36 @@
+.testimonials {
+  padding-bottom: 207px;
+  padding-top: 135px;
+  background-color: #fff9f8;
+}
+.quote {
+  display: block;
+  margin: 0 auto 50px;
+  fill: var(--accent-color);
+}
+
+.jack {
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+.testimonial-list {
+  width: 964px;
+  text-align: center;
+  margin: 0 auto;
+}
+.post {
+  font-size: 18px;
+  line-height: 1.94;
+  color: var(--title-color);
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  margin-bottom: 45px;
+}
+.client-name {
+  font-size: 22px;
+  line-height: 1.59;
+  color: var(--title-color);
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  text-align: center;
+}

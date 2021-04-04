@@ -1,0 +1,67 @@
+.procedures {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.procedures-title,
+.blog-title {
+  margin-bottom: 30px;
+}
+.procedures-description,
+.blog-description {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 114px;
+}
+.procedures-list,
+.blog-list {
+  display: flex;
+  /* margin-top: -28px;
+  margin-left: -28px; */
+}
+.procedure-item {
+  /* flex-basis: calc(100% / 3 - 28px);
+  margin-top: 28px;
+  margin-left: 28px; */
+  width: 360px;
+  border: 1px solid #e3e6ea;
+  text-align: center;
+  padding: 20px 20px 46px;
+}
+.procedure-item:hover {
+  border: none;
+  box-shadow: 0 10px 20px #e3e6ea;
+}
+
+.procedure-item:hover .read-more-link {
+  background-color: var(--accent-color);
+}
+
+.procedure-thumb,
+.blog-thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.procedure-item-title,
+.blog-item-title {
+  font-size: 22px;
+  line-height: 1.22;
+  color: var(--title-color);
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  text-align: center;
+  padding: 20px 0;
+}
+.procedure-item-description,
+.blog-item-description {
+  font-size: 14px;
+  line-height: 1.92;
+  color: var(--item-color);
+  font-weight: 300;
+  font-family: var(--main-font);
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 44px;
+}

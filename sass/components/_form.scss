@@ -1,0 +1,69 @@
+.form {
+  background-color: #fff9f8;
+  background-image: url(../images/appointment/bg.jpg);
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 130px;
+}
+.form .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-register {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 652px;
+}
+
+.form-text,
+.form-notes {
+  border: none;
+  border-bottom: 1px solid #e3e6ea;
+  background: transparent;
+  padding-bottom: 16px;
+}
+.form-text placeholder,
+.form-notes placeholder {
+  text-transform: uppercase;
+  color: #e3e6ea;
+}
+
+.form-text {
+  width: 318px;
+
+  font-size: 12px;
+  line-height: 4.58;
+  color: #999999;
+  font-weight: 400;
+  font-family: var(--main-font);
+
+  /* border: none; */
+  /* border-bottom: 1px solid  #e3e6ea; */
+  /* background: transparent; */
+}
+
+.form-notes {
+  width: 100%;
+  font-size: 12px;
+  line-height: 4.58;
+  color: var(--item-color);
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+.form-btn {
+  font-size: 14px;
+  /* line-height: 3.9; */
+
+  color: var(--white-color);
+  font-weight: 500;
+  font-family: var(--main-font);
+  text-align: center;
+  background: var(--accent-color);
+  border-radius: 35px;
+  border: none;
+  /* min-width: 200px; */
+  margin-top: 40px;
+  padding: 18px 22px;
+}

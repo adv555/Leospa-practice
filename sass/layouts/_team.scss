@@ -1,0 +1,96 @@
+.team {
+  padding-top: 139px;
+  padding-bottom: 214px;
+}
+.team .team-description {
+  margin-bottom: 94px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-item {
+  position: relative;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.team-thumb {
+  position: absolute;
+  z-index: 1;
+  bottom: -20%;
+  left: 10%;
+  right: 10%;
+  /* border: 1px solid var(--bg-color-cards-dark); */
+  width: 298px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 39px;
+  background-color: var(--bg-color-cards-dark);
+}
+
+.team-item:hover .team-thumb {
+  box-shadow: 0 5px 20px #f0f0f0;
+
+  /* border: 1px solid var(--bg-color-cards-dark); */
+}
+.team-item-title {
+  font-size: 22px;
+  line-height: 1.22;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+.team-item-description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #888888;
+  font-weight: 300;
+  font-family: 'Roboto';
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social-list {
+  display: none;
+  /* overflow: hidden; */
+  align-items: center;
+  justify-content: center;
+  /* transform: translateY(20%); */
+  /* transition: all 500ms ease-out; */
+}
+
+.team-item:hover .social-list {
+  display: flex;
+  overflow: visible;
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+  border: none;
+}
+.social-link:hover .social-icon {
+  fill: var(--white-color);
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* background-color: var(--accent-color); */
+  border: 1px solid #30383b;
+  text-align: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 14px;
+}
+
+.social-icon {
+  fill: var(--bg-color-btn);
+}

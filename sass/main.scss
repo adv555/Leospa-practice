@@ -1,0 +1,17 @@
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./components/container";
+@import "./components/form";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/services";
+@import "./layouts/procedures";
+@import "./layouts/testimonials";
+@import "./layouts/blog";
+@import "./layouts/team";
+@import "./layouts/footer";

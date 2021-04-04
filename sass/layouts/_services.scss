@@ -1,0 +1,52 @@
+.services {
+  padding-top: 70px;
+}
+
+.services .container,
+.service-list {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+}
+.service-item {
+  position: relative;
+  width: 476px;
+  height: 570px;
+  overflow: hidden;
+}
+
+.service-item:not(:last-child) {
+  margin-right: 4px;
+}
+.image-wrapper,
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  transform: translateY(100%);
+}
+.service-item:hover .overlay {
+  overflow: visible;
+  transform: translateY(0);
+  transition: 500ms ease-in-out;
+}
+.overlay-text {
+  font-size: 22px;
+  line-height: 1.22;
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-weight: 700px;
+  margin-top: 25px;
+}
+
+/* .service-list .service-item + .service-item {
+  margin-right: 4px;
+} */
