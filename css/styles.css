@@ -487,11 +487,6 @@ header .container {
   margin-left: 30px;
 }
 
-.team-item:hover .social-list {
-  display: flex;
-  overflow: visible;
-}
-
 .team-thumb {
   position: absolute;
   z-index: 1;
@@ -526,6 +521,7 @@ header .container {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .social-list {
   display: none;
   /* overflow: hidden; */
@@ -534,11 +530,12 @@ header .container {
   /* transform: translateY(20%); */
   /* transition: all 500ms ease-out; */
 }
-/* .social-icon {
-  width: 30px;
-  height: 30px;
-  
-} */
+
+.team-item:hover .social-list {
+  display: flex;
+  overflow: visible;
+}
+
 .social-link:hover {
   background-color: var(--accent-color);
   border: none;
