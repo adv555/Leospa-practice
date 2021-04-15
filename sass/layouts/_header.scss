@@ -1,39 +1,57 @@
-.logo {
-  margin-right: 203px;
+.header {
+  position: absolute;
+  top: 20px;
+  left:0;
+  width:100%;
+  z-index: 1;
+
 }
 
-.logo-link {
-  font-size: 30px;
-  letter-spacing: 3px;
-  line-height: 2.4;
-  color: var(--title-color);
-  font-weight: 400;
-  font-family: var(--logo-font);
-  padding-bottom: 0;
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 203px;
+
+  &-link {
+    font-size: 30px;
+    color: $logo-light-theme;
+    @include font (400, 30px, 72px);
+    letter-spacing: 3px;
+    font-family: $logo-font;
+    padding-bottom: 0;
+  }
+  &-img {
+    margin: 0 auto;
+    // margin-bottom: 8px;
+  }
 }
-.logo-img {
-  margin-bottom: 8px;
-}
+
 .nav {
   display: flex;
   align-items: flex-end;
   justify-items: flex-start;
   width: 456px;
+
+  &__list {
+    display: flex;
+    @include font (500, 14px, 45px);
+    text-transform: uppercase;
+    font-family: $main-font;
+  
+    & .nav__item + .nav__item {
+      margin-left: 50px;
+    }
+  }
+  
+  &__link {
+    color: $primary-text-color;
+    transition: color 250ms $cubik;
+    
+    &:hover, &:focus {
+      color: $accent-color;
+    }
+  }
 }
 
-.nav-list {
-  display: flex;
-  font-size: 14px;
-  line-height: 3.2;
-  color: #263a41;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.nav-link {
-  color: var(--primary-text-color);
-  transition: color 250ms var(--cubik), fill 250ms var(--cubik);
-}
 
-.nav-list .nav-item + .nav-item {
-  margin-left: 50px;
-}
+

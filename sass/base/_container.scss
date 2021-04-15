@@ -3,11 +3,20 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid tomato;
   
   .header & {
     display: flex;
     align-items: center;
   }
+
+  .service & {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1920px;
+}
+
 
   .footer & {
     display: flex;

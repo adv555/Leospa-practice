@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="nav">
           <div class="logo">
@@ -28,25 +28,25 @@
               ><img src="./images/logo.png" alt="logo"/>
             </a> -->
             <a class="logo-img" href="./index.html">
-              <img src="./images/logo 2.png" alt="Logo" width="42px" height="51px"/>
+              <img src="./images/logo 2.png" alt="Logo" width="49px" height="41px" />
             </a>
             <a class="logo-link link" href="/index.html">Leospa</a>
           </div>
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link link" href="#hero">home</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="#hero">home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="#about">about</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="#about">about</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="#features">feature</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="#features">feature</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="#sefvices">service</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="#sefvices">service</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="#contact">contact</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contact">contact</a>
             </li>
           </ul>
         </nav>
@@ -54,24 +54,27 @@
     </header>
     <main>
       <!-- HERO -->
-      <!-- <section class="hero " id="hero">
+      <section class="hero " id="hero">
+        <div class="hero__bg-img">
+          <img src="./images/hero/bg.png" alt="spa-image">
+        </div>
         <div class="container">
-         <div class="hero-wrapper">
-            <p class="suptitle">spa & beauty center</p>
-            <h1 class="hero-title">Beauty and success starts here.</h1>
-            <p class="hero-description ">
+        <div class="hero__wrapper">
+          <p class="hero__suptitle">spa & beauty center</p>
+          <h1 class="hero__title">Beauty and success starts here.</h1>
+          <p class="hero__description ">
               Together creeping heaven upon third dominion be upon won't darkness
               rule behold it created good saw after she'd Our set living.
             </p>
-            <div class="hero-buttons">
-              <a class="hero-btn link" href="">reserve now
-              <svg class="arrow" width="25" height="12">
+            <div class="hero__btn">
+              <a class="hero__btn-reserve-link link" href="">reserve now
+                <svg class="hero__btn-reserve-link-icon" width="25" height="12">
                 <use href="./images/sprite.svg#arrow"></use>
               </svg>
               </a>
-              <a class="video-link link" href="https://www.youtube.com/watch?v=QWUPm0ND7HY">
-                <span class="wrapper-arrow-icon">
-                  <svg class="arrow-icon" width="25" height="12">
+              <a class="hero__btn-video-link link" href="https://www.youtube.com/watch?v=QWUPm0ND7HY">
+                <span class="hero__btn-video-link-wrapper">
+                  <svg class="hero__btn-video-link-icon" width="25" height="12">
                     <use href="./images/sprite.svg#icon"></use>
                   </svg>
                 </span>
@@ -79,81 +82,81 @@
             </div>
          </div>
         </div>
-      </section> -->
+      </section>
       <!-- About -->
-      <!-- <section class="about" id="about">
+      <section class="about" id="about">
         <div class="container">
-          <img src="./images/about/china-rose.png" alt="china-rose"  width="118px" height="130px"/>
-          <img src="./images/about/jasmine.png" alt="jasmine" width="75px" height="88px"/>
+          <img class="about-flower-1" src="./images/about/china-rose.png" alt="china-rose" width="118px" height="130px" />
+          <img class="about-flower-2" src="./images/about/jasmine.png" alt="jasmine" width="75px" height="88px" />
           <img class="about-logo" src="./images/about/butterfly.png" alt="logo" width="71px" height="85px">
-          <p class="about-suptitle">About our spa center</p>
-          <h2 class="about-title">Come and you will be Inspired!</h2>
-          <p class="about-description">
+          <p class="about__suptitle">About our spa center</p>
+          <h2 class="about__title">Come and you will be Inspired!</h2>
+          <p class="about__description">
             It’s the end of summer the sweltering heat makes human sweat in the
             night and makes the plants and trees wilt even in the moonlit
             nights. The eastern wind breeze brings an eerie feeling, that the
             monsoon clouds are soon coming, there is a strange silence in the
             ears, the sky gets darker and darker
           </p>
-          <a class="read-more-link link" href="#">Read more</a>
+          <a class="about__read-more-link link" href="#">Read more</a>
         </div>
-      </section> -->
+      </section>
       <!-- Services -->
-      <!-- <section class="services">
+      <section class="service">
         <div class="container">
           <h2 class="visually-hidden">Our services</h2>
-          <ul class="service-list list">
-            <li class="service-item">
-              <div class="image-wrapper">
+          <ul class="service__list list">
+            <li class="service__item">
+              <div class="service__image-wrapper">
                 <img src="./images/services/1.jpg" alt="image-1" width="476px" height="570px" />
               </div>
-              <div class="overlay">
-                <svg class="arrow">
+              <div class="service__overlay">
+                <svg class="service__overlay-icon">
                   <use href="./images/sprite.svg#icon-herbal"></use>
                 </svg>
-                <p class="overlay-text">Body Treatment</p>
+                <p class="service__overlay-text">Body Treatment</p>
               </div>
               <a class="link" href="#"></a>
             </li>
-            <li class="service-item">
+            <li class="service__item">
               <div class="image-wrapper">
                 <img src="./images/services/2.jpg" alt="image-2" width="476px" height="570px" />
               </div>
-              <div class="overlay">
-                <svg class="arrow">
+              <div class="service__overlay">
+                <svg class="service__overlay-icon">
                   <use href="./images/sprite.svg#icon-herbal"></use>
                 </svg>
-                <p class="overlay-text">Body Treatment</p>
+                <p class="service__overlay-text">Body Treatment</p>
               </div>
               <a class="link" href="#"></a>
             </li>
-          <li class="service-item">
+          <li class="service__item">
             <div class="image-wrapper">
               <img src="./images/services/3.jpg" alt="image-3" width="476px" height="570px" />
             </div>
-            <div class="overlay">
-              <svg class="arrow">
+            <div class="service__overlay">
+              <svg class="service__overlay-icon">
                 <use href="./images/sprite.svg#icon-herbal"></use>
               </svg>
-              <p class="overlay-text">Body Treatment</p>
+              <p class="service__overlay-text">Body Treatment</p>
             </div>
             <a class="link" href="#"></a>
           </li>
-            <li class="service-item">
+            <li class="service__item">
               <div class="image-wrapper">
                 <img src="./images/services/4.jpg" alt="image-4" width="476px" height="570px" />
               </div>
-              <div class="overlay">
-                <svg class="arrow">
+              <div class="service__overlay">
+                <svg class="service__overlay-icon">
                   <use href="./images/sprite.svg#icon-herbal"></use>
                 </svg>
-                <p class="overlay-text">Body Treatment</p>
+                <p class="service__overlay-text">Body Treatment</p>
               </div>
               <a class="link" href="#"></a>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Popular procedures -->
       <!-- <section class="procedures" id="features">
         <div class="container">
@@ -517,7 +520,7 @@
         <nav class="nav">
           <a class="logo-img" href="./index.html"><img src="./images/logo 2.png" alt="Logo" width="49px" /></a>
           <a class="logo-footer link" href="./index.html">Leospa</a>
-          <ul class="nav-list list">
+          <ul class="nav__list list">
             <li class="nav-item"><a class="nav-link link" href="">home</a></li>
             <li class="nav-item"><a class="nav-link link" href="">about</a></li>
             <li class="nav-item"><a class="nav-link link" href="">feature</a></li>
