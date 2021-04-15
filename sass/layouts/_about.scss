@@ -3,26 +3,27 @@
   padding-bottom: 70px;
 }
 .about .container {
-  // display: flex;
-  // flex-flow: column;
-  // justify-self: center;
-  @include flex-column(column, center);
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  // @include flex-column(column, center);
 }
 .about-logo {
   @extend %margin-auto;
- 
   margin-bottom: 40px;
 }
 .about-suptitle {
-  @include text (20px, 2.7);
+  // @include text (20px, 2.7);
+  @include font (400, 20px, 54px);
   
-  letter-spacing: 2px;
-  color: var(--item-color);
+  // letter-spacing: 2px;
+  color: $item-color;
   // font-weight: 400;
   // font-family: var(--main-font);
   text-align: center;
   margin-bottom: 35px;
 }
+
 .about-title {
   @include text (42px, 1.3, 700);
   color: #1e2528;
