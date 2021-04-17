@@ -7,13 +7,13 @@
   }
   &-flower-1 {
     position: absolute;
-    top: 700px;
-    left: 350px;
+    top: 600px;
+    left: 25%;
   }
   &-flower-2 {
     position: absolute;
-    top: 950px;
-    left: 1700px;
+    top: 70%;
+    right: 135px;
   }
 
   &__suptitle {
@@ -29,17 +29,17 @@
   
   &__title {
    
-    @include font (700, 42px, 55px);
+    @include font (700, 33px, 55px);
     color: $title-text-color;
     font-family: $secondary-font;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
   }
   
   &__description {
     @extend %margin-auto;
-    width: 863px;
-    height: 71px;
+    // width: 863px;
+    // height: 71px;
 
     @include font (300, 15px, 28px);
     color: $secondary-text-color;
@@ -67,5 +67,23 @@
     border-radius: 50px;
   }
 }
+@media screen and (min-width:480px) {
 
+  .about__title {
+    @include font (700, 42px, 55px);
+    }
+  
+  
+}
 
+@media screen and (max-width:1139px) {
+  .about-flower-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .about__description {
+    width: 863px;
+  }
+}

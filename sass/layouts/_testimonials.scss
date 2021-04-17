@@ -1,36 +1,46 @@
-.testimonials {
-  padding-bottom: 207px;
-  padding-top: 135px;
-  background-color: #fff9f8;
-}
 .quote {
   display: block;
-  margin: 0 auto 50px;
-  fill: var(--accent-color);
+  margin: 0 auto;
+  width: 52px;
+  height: 60px;
+  fill: $accent-color;
+  margin-bottom: 50px;
 }
 
-.jack {
-  border-radius: 50%;
-  margin: 0 auto 15px;
+.testimonial {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff9f8;
+  
+  &__list {
+    margin: 0 auto;
+    // width: 964px;
+    text-align: center;
+  }
+
+  &__post {
+    // width: 974px;
+    @include font (400, 18px, 35px);
+    font-family: $secondary-font;
+    color: $primary-text-color;
+    margin-bottom: 50px;
+    
+    &-client-photo {
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    &-client-name {
+      font-size: 22px;
+      line-height: 1.59;
+      color: var(--title-color);
+      font-weight: 400;
+      font-family: var(--secondary-font);
+      text-align: center;
+    }
+  }
 }
-.testimonial-list {
-  width: 964px;
-  text-align: center;
-  margin: 0 auto;
-}
-.post {
-  font-size: 18px;
-  line-height: 1.94;
-  color: var(--title-color);
-  font-weight: 400;
-  font-family: var(--secondary-font);
-  margin-bottom: 45px;
-}
-.client-name {
-  font-size: 22px;
-  line-height: 1.59;
-  color: var(--title-color);
-  font-weight: 400;
-  font-family: var(--secondary-font);
-  text-align: center;
-}
+
+
+

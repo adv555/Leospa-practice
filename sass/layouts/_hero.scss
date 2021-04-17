@@ -1,21 +1,24 @@
-/* .hero {
-  margin-left: 389px;
-  width: 539px;
-} */
 .hero {
-  padding-top: 165px;
-  padding-bottom: 165px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 165px;
+  // padding-bottom: 165px;
 
   &__bg-img {
     position: absolute;
     top: 0;
     right: 0;
     width: 42%;
+    z-index: -1;
+  }
+  &__bg-img-2 {
+    position: absolute;
+    top: 190px;
+    left: -100px;
+    width: 42%;
+    z-index: -1;
   }
 
-  &__wrapper {
-    width: 545px;
-  }
   &__suptitle {
     @include font (400, 15px, 72px);
     letter-spacing: 2px;
@@ -25,11 +28,11 @@
   }
 
   &__title {
-    @include font (700, 60px, 75px);
+    @include font (700, 44px, 54px);
     color: $title-text-color;
     font-family: $secondary-font;
     text-align: start;
-    margin-bottom: 47px;
+    margin-bottom: 25px;
   }
 
   &__description {
@@ -38,7 +41,7 @@
     color: $sup-text-color;
     font-family: $main-font;
     text-align: left;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
   }
 }
 
@@ -89,6 +92,35 @@
   }
 }
 
+@media screen and (max-width:767px) {
+  .hero__bg-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 90px;
+    
+    &__title {
+      @include font (700, 60px, 75px);
+      margin-bottom: 47px;
+    }
+
+  }
+
+  .hero__wrapper {
+    width: 545px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .hero {
+    // padding-top: 165px;
+    padding-bottom: 165px;
+  }
+  
+}
 
 
 // .video-img {

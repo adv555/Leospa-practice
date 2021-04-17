@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beauty centre</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty centre</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
@@ -22,16 +21,16 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
+        <div class="logo">
+          <!-- <a class="logo-link link" href="./index.html"
+            ><img src="./images/logo.png" alt="logo"/>
+          </a> -->
+          <a class="logo-img" href="./index.html">
+            <img src="./images/logo 2.png" alt="Logo" width="49px" height="41px" />
+          </a>
+          <a class="logo-link link" href="/index.html">Leospa</a>
+        </div>
         <nav class="nav">
-          <div class="logo">
-            <!-- <a class="logo-link link" href="./index.html"
-              ><img src="./images/logo.png" alt="logo"/>
-            </a> -->
-            <a class="logo-img" href="./index.html">
-              <img src="./images/logo 2.png" alt="Logo" width="49px" height="41px" />
-            </a>
-            <a class="logo-link link" href="/index.html">Leospa</a>
-          </div>
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link" href="#hero">home</a>
@@ -50,6 +49,42 @@
             </li>
           </ul>
         </nav>
+        <button class="menu__burger-btn" type="button" data-menu-button>
+          <svg class="menu__burger-icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- <button class="mobile-menu__close-btn" type="button" data-menu-close>
+                                                                                                                  <svg class="mobile-menu__close-icon">
+                                                                                                                    <use href="./images/sprite.svg#icon-menu"></use>
+                                                                                                                  </svg>
+                                                                                                                </button> -->
+        <div class="mobile-menu" data-menu>
+          <!-- <button class="mobile-menu__close-btn " type="button" data-menu-close>
+                                                                                                                                                <svg class="mobile-menu__close-icon">
+                                                                                                                                                  <use href="./images/sprite.svg#icon-close"></use>
+                                                                                                                                                </svg>
+                                                                                                                                              </button> -->
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#hero">home</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#about">about</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#features">feature</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#sefvices">service</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#contact">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -58,14 +93,17 @@
         <div class="hero__bg-img">
           <img src="./images/hero/bg.png" alt="spa-image">
         </div>
+        <div class="hero__bg-img-2">
+          <img src="./images/hero/lief-bg.png" alt="lief-image">
+        </div>
         <div class="container">
-        <div class="hero__wrapper">
-          <p class="hero__suptitle">spa & beauty center</p>
-          <h1 class="hero__title">Beauty and success starts here.</h1>
-          <p class="hero__description ">
-              Together creeping heaven upon third dominion be upon won't darkness
-              rule behold it created good saw after she'd Our set living.
-            </p>
+          <div class="hero__wrapper">
+            <p class="hero__suptitle">spa & beauty center</p>
+            <h1 class="hero__title">Beauty and success starts here.</h1>
+            <p class="hero__description ">
+                Together creeping heaven upon third dominion be upon won't darkness
+                rule behold it created good saw after she'd Our set living.
+              </p>
             <div class="hero__btn">
               <a class="hero__btn-reserve-link link" href="">reserve now
                 <svg class="hero__btn-reserve-link-icon" width="25" height="12">
@@ -78,9 +116,9 @@
                     <use href="./images/sprite.svg#icon"></use>
                   </svg>
                 </span>
-                Watch our story</a>
+              Watch our story</a>
             </div>
-         </div>
+          </div>
         </div>
       </section>
       <!-- About -->
@@ -119,7 +157,7 @@
               <a class="link" href="#"></a>
             </li>
             <li class="service__item">
-              <div class="image-wrapper">
+              <div class="service__image-wrapper">
                 <img src="./images/services/2.jpg" alt="image-2" width="476px" height="570px" />
               </div>
               <div class="service__overlay">
@@ -130,20 +168,20 @@
               </div>
               <a class="link" href="#"></a>
             </li>
-          <li class="service__item">
-            <div class="image-wrapper">
-              <img src="./images/services/3.jpg" alt="image-3" width="476px" height="570px" />
-            </div>
-            <div class="service__overlay">
-              <svg class="service__overlay-icon">
-                <use href="./images/sprite.svg#icon-herbal"></use>
-              </svg>
-              <p class="service__overlay-text">Body Treatment</p>
-            </div>
-            <a class="link" href="#"></a>
-          </li>
             <li class="service__item">
-              <div class="image-wrapper">
+              <div class="service__image-wrapper">
+                <img src="./images/services/3.jpg" alt="image-3" width="476px" height="570px" />
+              </div>
+              <div class="service__overlay"> 
+                <svg class="service__overlay-icon">
+                  <use href="./images/sprite.svg#icon-herbal"></use>
+                </svg>
+                <p class="service__overlay-text">Body Treatment</p>
+              </div>
+              <a class="link" href="#"></a>
+            </li>
+            <li class="service__item">
+              <div class="service__image-wrapper">
                 <img src="./images/services/4.jpg" alt="image-4" width="476px" height="570px" />
               </div>
               <div class="service__overlay">
@@ -158,133 +196,123 @@
         </div>
       </section>
       <!-- Popular procedures -->
-      <!-- <section class="procedures" id="features">
+      <section class="procedures" id="features">
         <div class="container">
-          <h2 class="procedures-title">Popular Procedures</h2>
-          <p class="procedures-description">
+          <h2 class="procedures__title">Popular Procedures</h2>
+          <p class="procedures__description">
             To doesn't his appear replenish together called he of mad place
             won't wherein blessed second every wherein were meat kind wherein
             and martcin
           </p>
-          <ul class="procedures-list list">
-            <li class="procedure-item" >
+          <ul class="procedures__list list">
+            <li class="procedure__item">
               <img
                 src="./images/popular-procedures-blog/img-1.jpg"
                 alt="therapy"
               />
-             <div class="procedure-thumb">
-                <h3 class="procedure-item-title" >Massage Therapy</h3>
-                <p class="procedure-item-description">
+            <div class="procedure__item-thumb">
+              <h3 class="procedure__item-thumb-title">Massage Therapy</h3>
+              <p class="procedure__item-thumb-description">
                   Living winged said you darkness you're divide gathered and bring
                   one seasons face great dr Waters firmament place which.
                 </p>
-                <a class="read-more-link link" href="#">read more</a>
+                <a class="procedure__item-link link" href="#">read more</a>
              </div>
             </li>
-            <li class="procedure-item" >
+            <li class="procedure__item">
               <img
                 src="./images/popular-procedures-blog/img-2.jpg"
                 alt="care"
               />
-              <div class="procedure-thumb">
-                <h3 class="procedure-item-title" >Beauty Care</h3>
-                <p class="procedure-item-description">
+              <div class="procedure__item-thumb">
+                <h3 class="procedure__item-thumb-title">Beauty Care</h3>
+                <p class="procedure__item-thumb-description">
                   Living winged said you darkness you're divide gathered and bring
                   one seasons face great dr Waters firmament place which.
                 </p>
-                <a class="read-more-link link" href="#">read more</a>
+                <a class="procedure__item-link link" href="#">read more</a>
               </div>
             </li>
-            <li class="procedure-item" >
+            <li class="procedure__item">
               <img
                 src="./images/popular-procedures-blog/img-3.jpg"
                 alt="reflexology"
               />
-             <div class="procedure-thumb">
-                <h3 class="procedure-item-title" >Executive Reflexology</h3>
-                <p class="procedure-item-description">
+            <div class="procedure__item-thumb">
+              <h3 class="procedure__item-thumb-title">Executive Reflexology</h3>
+              <p class="procedure__item-thumb-description">
                   Living winged said you darkness you're divide gathered and bring
                   one seasons face great dr Waters firmament place which.
                 </p>
-                <a class="read-more-link link" href="#">read more</a>
+                <a class="procedure__item-link link" href="#">read more</a>
              </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Testimonial section -->
-      <section class="testimonials">
+      <section class="testimonial">
         <div class="container">
-          <!-- h2 -->
           <h2 class="visually-hidden">Testimonials</h2>
           <svg class="quote">
-            <use href="./images/sprite.svg#quote" width="52px" height="60px"></use>
+            <use href="./images/sprite.svg#quote"></use>
           </svg>
-          <!-- <img class="quote" src="./images/testimonial/quote.png" alt="quote" width="52px" height="60px"> -->
-          <ul class="testimonial-list list">
-            <li class="testimonial-item">
-              <p class="post">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
-                necessitatibus veritatis corrupti reiciendis adipisci cum,
-                pariatur rem fugiat magni exercitationem deleniti, repellat
-                beatae dolorem voluptas. Ea suscipit sunt magni quisquam!
+          <ul class="testimonial__list list">
+            <li class="testimonial__item">
+              <p class="testimonial__post">
+                First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass
+                life
+                blessed you meat shall you winged under from their there he That you're one called gather make much red wherein
+                set
+                fourth green bearing fifth replenish given she had.
               </p>
-              <img class="jack" src="./images/testimonial/client-1.jpg" alt="girl-1" width="117px" height="116px" />
-              <p class="client-name">Jack Marsh,<span>Executive</span></p>
+              <img class="testimonial__post-client-photo" src="./images/testimonial/client-1.jpg" alt="girl-1" width="117px"
+                height="116px" />
+              <p class="testimonial__post-client-name">Jack Marsh,<span>Executive</span></p>
             </li>
-            <!-- <li class="testimonial-item">
-              <p class="post">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
-                necessitatibus veritatis corrupti reiciendis adipisci cum,
-                pariatur rem fugiat magni exercitationem deleniti, repellat
-                beatae dolorem voluptas. Ea suscipit sunt magni quisquam!
-              </p>
-              <img class="jack" src="./images/testimonial/client-1.jpg" alt="girl-2" />
-              <p class="client-name">Jack Marsh,<span>Executive</span></p>
-            </li> -->
           </ul>
         </div>
       </section>
       <!-- Our Team -->
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Experienced Team</h2>
-          <p class="team-description">
+          <h2 class="team__title">Experienced Team</h2>
+          <p class="team__description">
             To doesn't his appear replenish together called he of mad place
             won't wherein blessed second every wherein were meat kind wherein
             and martcin
           </p>
-          <ul class="team-list list">
-            <li class="team-item">
+          <ul class="team__list list">
+            <li class="team__item">
               <img src="./images/team/joseph-austin.jpg" alt="Joseph" width="360px" height="434px"/>
-              <div class="team-thumb">
-                <h3 class="team-item-title">Joseph Austin</h3>
-                <p class="team-item-description">Thai Message</p>
+              <div class="team__thumb">
+                <h3 class="team__thumb-title">Joseph Austin</h3>
+                <p class="team__thumb-description">Thai Message</p>
                 <ul class="social-list list">
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
-                  </li class="social-item">
-                  <li>
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
@@ -292,36 +320,36 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img src="./images/team/david-hannan.jpg" alt="David" width="360px" height="434px" />
-              <div class="team-thumb">
-                <h3 class="team-item-title">David Hanna</h3>
-                <p class="team-item-description">Thai Message</p>
-                <ul class="social-list list">
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+              <div class="team__thumb">
+                <h3 class="team__thumb-title">David Hanna</h3>
+                <p class="team__thumb-description">Thai Message</p>
+                              <ul class="social-list list">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
-                  </li class="social-item">
-                  <li>
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
@@ -329,43 +357,40 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img src="./images/team/cheryl-harris.jpg" alt="Charyl" width="360px" height="434px" />
-              <div class="team-thumb">
-                <h3 class="team-item-title">Charyl Harris</h3>
-                <p class="team-item-description">Thai Message</p>
+              <div class="team__thumb">
+                <h3 class="team__thumb-title">Charyl Harris</h3>
+                <p class="team__thumb-description">Thai Message</p>
                 <ul class="social-list list">
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
-                  </li class="social-item">
-                  <li>
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="#">
-                      <svg class="social-icon" width="22" height="22">
+                  <li class="social-list__item">
+                    <a class="social-list__link link" href="#">
+                      <svg class="social-list__icon" width="22" height="22">
                         <use href="images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                </ul>
-              </div>
-            </li>
                 </ul>
               </div>
             </li>
@@ -399,56 +424,47 @@
         </div>
       </section>
       <!-- Blog -->
-      <section class="blog">
+      <section class="procedures" id="features">
         <div class="container">
-          <h2 class="blog-title">Latest From Blog</h2>
-          <p class="blog-description">
+          <h2 class="procedures__title">Popular Procedures</h2>
+          <p class="procedures__description">
             To doesn't his appear replenish together called he of mad place
             won't wherein blessed second every wherein were meat kind wherein
             and martcin
           </p>
-          <ul class="blog-list list">
-            <li class="blog-item">
-              <img
-                src="./images/popular-procedures-blog/img-1.jpg"
-                alt="post-1"
-              />
-              <div class="blog-thumb">
-                <h3 class="blog-item-title">Massage Therapy</h3>
-                <p class="blog-item-description">
+          <ul class="procedures__list list">
+            <li class="procedure__item">
+              <img src="./images/popular-procedures-blog/img-1.jpg" alt="therapy" />
+              <div class="procedure__item-thumb">
+                <h3 class="procedure__item-thumb-title">Massage Therapy</h3>
+                <p class="procedure__item-thumb-description">
                   Living winged said you darkness you're divide gathered and bring
                   one seasons face great dr Waters firmament place which.
                 </p>
-                <a class="read-more-link link" href="#">read more</a>
+                <a class="procedure__item-link link" href="#">read more</a>
               </div>
             </li>
-            <li>
-              <img
-                src="./images/popular-procedures-blog/img-2.jpg"
-                alt="post-2"
-              />
-              <div class="blog-thumb">
-               <h3 class="blog-item-title">Beauty Care</h3>
-               <p class="blog-item-description">
-                Living winged said you darkness you're divide gathered and bring
-                one seasons face great dr Waters firmament place which.
-               </p>
-               <a class="read-more-link link" href="#">read more</a>
-              </div>
-            </li>
-            <li>
-              <img
-                src="./images/popular-procedures-blog/img-3.jpg"
-                alt="post-3"
-              />
-             <div class="blog-thumb">
-                <h3 class="blog-item-title">Executive Reflexology</h3>
-                <p class="blog-item-description"">
+            <li class="procedure__item">
+              <img src="./images/popular-procedures-blog/img-2.jpg" alt="care" />
+              <div class="procedure__item-thumb">
+                <h3 class="procedure__item-thumb-title">Beauty Care</h3>
+                <p class="procedure__item-thumb-description">
                   Living winged said you darkness you're divide gathered and bring
                   one seasons face great dr Waters firmament place which.
                 </p>
-                <a class="read-more-link link" href="#">read more</a>
-             </div>
+                <a class="procedure__item-link link" href="#">read more</a>
+              </div>
+            </li>
+            <li class="procedure__item">
+              <img src="./images/popular-procedures-blog/img-3.jpg" alt="reflexology" />
+              <div class="procedure__item-thumb">
+                <h3 class="procedure__item-thumb-title">Executive Reflexology</h3>
+                <p class="procedure__item-thumb-description">
+                  Living winged said you darkness you're divide gathered and bring
+                  one seasons face great dr Waters firmament place which.
+                </p>
+                <a class="procedure__item-link link" href="#">read more</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -514,7 +530,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <!-- <footer>
       <div>
         <a href="#"><img src="" alt="logo" /></a>
         <nav class="nav">
@@ -547,6 +563,7 @@
           RESERVED.
         </p>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

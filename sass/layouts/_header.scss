@@ -1,22 +1,23 @@
-.header {
-  position: absolute;
-  top: 20px;
-  left:0;
-  width:100%;
-  z-index: 1;
+// .header {
+//   position: absolute;
+//   top: 20px;
+//   left: 0;
+//   width: 100%;
+//   z-index: 1;
+// }
 
-}
+
 
 .logo {
   display: flex;
   flex-direction: column;
-  margin-right: 203px;
+  width: 110px;
+
+  // margin-right: 180px;
 
   &-link {
-    font-size: 30px;
     color: $logo-light-theme;
-    @include font (400, 30px, 72px);
-    letter-spacing: 3px;
+    @include font (400, 30px, 45px);
     font-family: $logo-font;
     padding-bottom: 0;
   }
@@ -24,34 +25,55 @@
     margin: 0 auto;
     // margin-bottom: 8px;
   }
+  
 }
 
-.nav {
-  display: flex;
-  align-items: flex-end;
-  justify-items: flex-start;
-  width: 456px;
-
-  &__list {
-    display: flex;
-    @include font (500, 14px, 45px);
-    text-transform: uppercase;
-    font-family: $main-font;
-  
-    & .nav__item + .nav__item {
-      margin-left: 50px;
-    }
+@media screen and (max-width:767px) {
+  .nav__list {
+    display: none;
   }
+}
+
+@media screen and (min-width:768px) {
+  .mobile-menu, 
+  .menu__burger-btn, 
+  .menu__burger-icon {
+    display: none;
+  }
+
+  .nav {
+    // display: flex;
+    // align-items: flex-end;
+    // justify-items: flex-start;
+    // width: 456px;
   
-  &__link {
-    color: $primary-text-color;
-    transition: color 250ms $cubik;
+    &__list {
+      display: flex;
+      @include font (500, 14px, 45px);
+      text-transform: uppercase;
+      font-family: $main-font;
     
-    &:hover, &:focus {
-      color: $accent-color;
+      & .nav__item + .nav__item {
+        margin-left: 50px;
+      }
     }
+    
+    &__link {
+      color: $primary-text-color;
+      transition: color 250ms $cubik;
+      cursor: pointer;
+      
+      &:hover, &:focus {
+        color: $accent-color;
+      }
+    }     
   }
 }
 
-
+@media screen and (min-width:1140px) {
+.logo {
+  margin-right: 180px;
+}
+  
+}
 

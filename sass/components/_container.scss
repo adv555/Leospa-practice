@@ -1,9 +1,39 @@
 .container {
-  width: 1140px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
   /* background-color: turquoise; */
   border: 2px solid tomato;
+
+  .header & {
+    position: relative;
+    // overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1140px;
+    .header & {
+      justify-content: flex-start;
+    }
+  }
+}
+
