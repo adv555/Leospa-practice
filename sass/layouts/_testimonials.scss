@@ -34,10 +34,14 @@
     &-client-name {
       font-size: 22px;
       line-height: 1.59;
-      color: var(--title-color);
-      font-weight: 400;
-      font-family: var(--secondary-font);
+      color: $primary-text-color;
+      font-weight: 700;
+      font-family: $secondary-font;
       text-align: center;
+    }
+
+    &-client-position {
+      font-weight: 400;
     }
   }
 }
