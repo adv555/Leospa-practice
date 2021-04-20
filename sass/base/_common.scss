@@ -1,7 +1,7 @@
 
 body {
-  font-family: var(--main-font);
-  background-color: var(--white-color);
+  font-family: $main-font;
+  background-color: $white-color;
 }
 
 h1,
@@ -11,7 +11,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: 700;
 }
 
